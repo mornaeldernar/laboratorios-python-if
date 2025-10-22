@@ -13,10 +13,11 @@ def demo_if_else():
     print(f"Calificación: {calificacion}")
     
     if calificacion >= 90:
-        if calificacion == 100:
+        if calificacion == 100 and beca:
+            print("Tiene beca completa")
             print("Pertenece al cuadro de honor")
         if beca:
-            print("Tiene beca completa")
+            print("Beca del 90%")
         print("Resultado: Excelente")
     elif calificacion >= 80:
         if beca:
@@ -24,7 +25,7 @@ def demo_if_else():
         print("Resultado: Muy bien")
     elif calificacion >= 70:
         if beca:
-            print("Pierde la beca completa")
+            print("Pierde la beca")
             beca = False
         print("Resultado: Bien")
     elif calificacion >= 60:

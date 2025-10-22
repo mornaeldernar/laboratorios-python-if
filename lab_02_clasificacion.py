@@ -36,12 +36,12 @@ def clasificar_producto(precio):
     #    - Si precio > 100: retornar "Premium"
     
     # TODO: Escribe tu código de clasificación aquí
-    if precio < 50:
-        return "Económico"
-    elif precio <= 100:
+    if precio > 100:
+        return "Premium"
+    elif 50 <= precio <= 100:
         return "Estándar"
     else:
-        return "Premium"
+        return "Económico"
     
 def main():
     # Casos de prueba
