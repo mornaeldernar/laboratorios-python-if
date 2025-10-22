@@ -1,0 +1,31 @@
+# Archivo: demo_03_if_else.py
+"""
+Demo 3: Estructuras if-else
+Objetivo: Mostrar control de flujo básico
+"""
+
+def demo_if_else():
+    print("=== Demo: Estructuras if-else ===")
+    
+    # Ejemplo con calificación
+    calificacion = 100
+    beca = False
+    print(f"Calificación: {calificacion}")
+    
+    if calificacion >= 90:
+        if calificacion == 100:
+            print("Pertenece al cuadro de honor")
+        if beca:
+            print("Tiene beca completa")
+        print("Resultado: Excelente")
+    elif calificacion >= 80:
+        print("Resultado: Muy bien")
+    elif calificacion >= 70:
+        print("Resultado: Bien")
+    elif calificacion >= 60:
+        print("Resultado: Suficiente")
+    else:
+        print("Resultado: Necesita mejorar")
+
+if __name__ == "__main__":
+    demo_if_else()
