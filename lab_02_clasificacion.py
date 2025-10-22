@@ -27,19 +27,22 @@ def clasificar_producto(precio):
     #    - Si no lo es, lanzar ValueError con mensaje "El precio debe ser mayor que 0"
     
     # TODO: Escribe tu código de validación aquí
-    
-    
+    if precio <= 0:
+        raise ValueError("El precio debe ser mayor que 0")
+
     # 2. Luego, implementar la lógica de clasificación usando if-elif-else
     #    - Si precio < 50: retornar "Económico"
     #    - Si precio está entre 50 y 100: retornar "Estándar"
     #    - Si precio > 100: retornar "Premium"
     
     # TODO: Escribe tu código de clasificación aquí
+    if precio < 50:
+        return "Económico"
+    elif precio <= 100:
+        return "Estándar"
+    else:
+        return "Premium"
     
-    
-    # Por ahora, lanzamos NotImplementedError para indicar que falta implementar
-    raise NotImplementedError("¡Función no implementada! Debes escribir el código de clasificación.")
-
 def main():
     # Casos de prueba
     precios = [25.99, 75.50, 150.00, -10.00]
